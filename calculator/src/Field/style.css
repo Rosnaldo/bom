@@ -1,0 +1,29 @@
+.field {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20%;
+  width: 60%;
+}
+
+.field > strong {
+  margin: 0 5%;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-start;
+  width: 54%;
+  height: 60%;
+}
+
+.canto {
+  width: 35px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.canto > p {
+  margin: auto;
+}
