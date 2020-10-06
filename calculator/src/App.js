@@ -15,7 +15,8 @@ const handleClick = (n_par, entrada, value, juros, matriz, setMatriz, setUpdate)
     const amortizacao = Number((prestacao - taxa_juros).toFixed(2));
     inicio = Number((inicio - amortizacao).toFixed(2));
     if (inicio < 1) {
-      matriz[matriz.length - 1][3] = matriz[matriz.length - 1][3] - inicio;
+      matriz[matriz.length - 1][3] -= inicio;
+      matriz[matriz.length - 1][2] += inicio;
       inicio = 0;
     }
     matriz.push([prestacao, taxa_juros, amortizacao, inicio]);
